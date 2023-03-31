@@ -1,0 +1,16 @@
+TDD - Test Development Drive - Desarrollo Basado en Pruebas
+
+Primero las pruebas y después el código...
+
+
+
+Documentación de código.
+Todo buen proyecto debe estar documentado
+
+
+Pruebas unitarias y automaticas
+En java existe Junit para realizar pruebas automáticas.
+En la actualidad la ultima versión de Junit se llama Jupiter.
+
+La herramienta Springboot me crea un proyecto y me instala Jupiter.
+Y ayuda con la configuración problematica

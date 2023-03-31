@@ -1,0 +1,15 @@
+Clase 02
+
+ping www.google.com.ar		//Envia 4 paquetes al servidor de google
+
+ping -n 1000 www.google.com.ar	//Envia 1000 paquetes
+
+ipconfig					//devuelve la configuración IP
+
+DNS:		Domain Name Service
+
+Pendientes: Modelo Referencia OSI
+            Protocolo TCP/IP
+            Protocolo HTTP
+            Fundamentos de una prueba Unitaria
+            Tipo de datos

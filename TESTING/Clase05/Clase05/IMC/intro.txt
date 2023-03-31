@@ -1,0 +1,9 @@
+https://tn.com.ar/sociedad/2021/02/08/imc-que-es-y-como-se-calcula/
+
+Trabajo Práctico
+- Según la nota, crear un documento suite de testeo (Análisis funcional – Diseño de prueba).
+- Testear el programa IMC
+- Debatimos los resultados el Lunes 24/10/2022
+
+
+nota: para ejecuta el programa desde un gitbash java IMC

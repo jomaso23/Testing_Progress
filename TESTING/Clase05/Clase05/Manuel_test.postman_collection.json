@@ -1,0 +1,761 @@
+{
+	"info": {
+		"_postman_id": "74992e7c-5030-479b-8150-abebd0a3a660",
+		"name": "TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23914634"
+	},
+	"item": [
+		{
+			"name": "localhost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "compilar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumarSinParamteros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumarConUnParametro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumarConDosParam",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "parmNoNumericos1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=2&nro2=4-",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "2"
+						},
+						{
+							"key": "nro2",
+							"value": "4-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=a&nro2=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "a"
+						},
+						{
+							"key": "nro2",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=hola&nro2=chau",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "hola"
+						},
+						{
+							"key": "nro2",
+							"value": "chau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=hola&nro2=chau",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "hola"
+						},
+						{
+							"key": "nro2",
+							"value": "chau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=hola&nro2=chau&nro3=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "hola"
+						},
+						{
+							"key": "nro2",
+							"value": "chau"
+						},
+						{
+							"key": "nro3",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=*4&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "*4"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoNumericos7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4*&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4*"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoEntero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=10.0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "10.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoEntero2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=3.5&nro2=5.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "3.5"
+						},
+						{
+							"key": "nro2",
+							"value": "5.5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoEntero3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4&nro2=4.1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4"
+						},
+						{
+							"key": "nro2",
+							"value": "4.1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNoEntero4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4&nro2=5.6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4"
+						},
+						{
+							"key": "nro2",
+							"value": "5.6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNeturo1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNeutro2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=0&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "0"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNeutro3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=0&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "0"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=-10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "-10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-5&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-5"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=-50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "-50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-5&nro2=-5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-5"
+						},
+						{
+							"key": "nro2",
+							"value": "-5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramNegativos6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "-0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramDesbordamiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=2000000000&nro2=2000000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "2000000000"
+						},
+						{
+							"key": "nro2",
+							"value": "2000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paramDesbordamiento2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-2000000000&nro2=-2000000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-2000000000"
+						},
+						{
+							"key": "nro2",
+							"value": "-2000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/sumarService?nro1=a&nro2=4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=a&nro2=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "a"
+						},
+						{
+							"key": "nro2",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

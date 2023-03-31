@@ -1,0 +1,666 @@
+{
+	"info": {
+		"_postman_id": "08ceceec-1493-4641-ab31-1793cbbc9a49",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumarService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sumarService un parametro de entrada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService dos parametros de entrada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=a&nro2=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "a"
+						},
+						{
+							"key": "nro2",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=hola&nro2=chau",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "hola"
+						},
+						{
+							"key": "nro2",
+							"value": "chau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=hola&nro2=chau&nro3=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "hola"
+						},
+						{
+							"key": "nro2",
+							"value": "chau"
+						},
+						{
+							"key": "nro3",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=*4&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "*4"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4*&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4*"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService entrada no numéricos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=2&nro2=4-",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "2"
+						},
+						{
+							"key": "nro2",
+							"value": "4-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=3.5&nro2=5.5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "3.5"
+						},
+						{
+							"key": "nro2",
+							"value": "5.5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4.1&nro2=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4.1"
+						},
+						{
+							"key": "nro2",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=4&nro2=5.6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "4"
+						},
+						{
+							"key": "nro2",
+							"value": "5.6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService de entrada no entero Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService Parametros de entrada neutros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=0&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "0"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=0&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "0"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService parámetros de entrada negativos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=-",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "-"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-5&nro2=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-5"
+						},
+						{
+							"key": "nro2",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=10&nro2=-50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "10"
+						},
+						{
+							"key": "nro2",
+							"value": "-50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-5&nro2=-5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-5"
+						},
+						{
+							"key": "nro2",
+							"value": "-5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-10&nro2=-0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-10"
+						},
+						{
+							"key": "nro2",
+							"value": "-0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService parametroscdesbordamiento en números enteros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=2000000000&nro2=2000000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "2000000000"
+						},
+						{
+							"key": "nro2",
+							"value": "2000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "P1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=-2000000000&nro2=-2000000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": "-2000000000"
+						},
+						{
+							"key": "nro2",
+							"value": "-2000000000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,38 @@
+Centro nro 8 de Formación Profesional SMATA
+Curso: Testing de Aplicaciones QC
+Profe: Carlos Ríos      carlos.rios@bue.edu.ar
+Días:   Lunes 10:00 a 14:00 hs      
+
+Materiales: https://github.com/crios2020/testing
+            https://www.youtube.com/playlist?list=PLMLmotKSEKYdhb3F3JpbtZPewb-9wZTji
+
+Software:   IDE:    Visual Studio Code.
+            Lenguajes:      Python 3.X
+                            PHP descargar paquete XAMPP y Paquete LARAGON
+                            Java descargar JDK 17 LTS de Oracle     
+                            Cliente HTTP Postman
+                            Docker  no instalar por ahora  
+                            Paquete de Oficina office o https://www.libreoffice.org/
+            
+Prueba Unitaria: testea una sola funcionalidad.
+Suite de testeo: Es un conjunto de pruebas que testea todo el proyecto.
+Cobertura - Coverage:  % de lineas de código estamos testeando.
+
+El usuario programador no crea las pruebas, solo entrega un software que
+    compila.
+
+Usuario Testing
+QC: Quality Check       (Pruebas funcionales - Caja Negra)
+QA: Quality Assurance   (Pruebas de toda la arquitectura, 
+                            automatiza pruebas - Caja Blanca)
+
+Pendientes: Modelo Referencia OSI
+            Protocolo TCP/IP
+            Protocolo HTTP
+            Fundamentos de una prueba Unitaria
+            Tipo de datos
+
+
+
+
+

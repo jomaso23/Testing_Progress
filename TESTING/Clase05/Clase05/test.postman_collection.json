@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "95716df0-0233-4d3b-bd45-5496e144b60e",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localhost",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SumarService",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sumar sin parámetros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/sumarService?nro1=&nro2=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"sumarService"
+					],
+					"query": [
+						{
+							"key": "nro1",
+							"value": ""
+						},
+						{
+							"key": "nro2",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
